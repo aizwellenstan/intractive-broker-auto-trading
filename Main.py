@@ -40,4 +40,7 @@ hour = ib.reqCurrentTime().hour
 minute = ib.reqCurrentTime().minute
 print(hour)
 print(minute)
+
+
+ib.run()
 #######################
