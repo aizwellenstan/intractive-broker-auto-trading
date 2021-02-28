@@ -1,5 +1,11 @@
 from ib_insync import *
-
+import time
+"""
+starttime = time.time()
+while True:
+    print("tick")
+    time.sleep(60.0 - ((time.time() - starttime) % 60.0))
+"""
 ib = IB()
 
 # IB Gateway
@@ -29,4 +35,9 @@ close3=bars[3].close
 print(close1)
 print(close2)
 print(close3)
+
+hour = ib.reqCurrentTime().hour
+minute = ib.reqCurrentTime().minute
+print(hour)
+print(minute)
 #######################
